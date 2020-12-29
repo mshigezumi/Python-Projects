@@ -1,6 +1,6 @@
 import os
 
-fpath = "/Users/mshigezumi/Documents/GitHub/Python-Projects/test"
+fpath = "/Users/mshigezumi/Documents/GitHub/Python-Projects/dir"
 
 directory = os.listdir(fpath)
 
@@ -10,4 +10,3 @@ for file in directory:
         mtime = os.path.getmtime(path)
         print(path)
         print(mtime)
-
