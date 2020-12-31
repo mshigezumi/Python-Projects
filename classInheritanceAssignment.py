@@ -4,7 +4,7 @@ class Game:
     title = "N/A"
     developer = "N/A"
     publisher = "N/A"
-    releaseDate = datetime.datetime(0, 0, 0)
+    releaseDate = datetime.datetime(2000, 1, 1)
 
 class Strategy(Game):
     gameSpeed = "Turn Based" #can also be realtime, or time variable (pause, fast forward, etc.)
