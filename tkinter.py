@@ -35,13 +35,13 @@ class ParentWindow(Frame):
         self.btnCancel = Button(self.master, text="Cancel", width=10, height=2, command=self.cancel)
         self.btnCancel.grid(row=2, column=1, padx=(0,90), pady=(30,0), sticky=NE)
 
-        def submit(self):
-            fn = self.varFName.get()
-            ln = self.varLName.get()
-            self.lblDisplay.config(text='Hello {} {}:'.format(fn,ln))
+    def submit(self):
+        fn = self.varFName.get()
+        ln = self.varLName.get()
+        self.lblDisplay.config(text='Hello {} {}.'.format(fn,ln))
 
-        def cancel(self):
-            self.master.destroy()
+    def cancel(self):
+        self.master.destroy()
 
 if __name__ == "__main__":
     root = tkinter.Tk()

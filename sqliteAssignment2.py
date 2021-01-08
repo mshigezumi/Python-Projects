@@ -21,5 +21,9 @@ with sqlite3.connect('test_database.db') as connection:
     c.executemany("INSERT INTO People VALUES(?, ?, ?)", peopleValues)
 
     c.execute("SELECT FirstName, LastName FROM People WHERE Age > 30")
-    for row in c.fetchall():
+    while True:
+        row = c.fetchone()
+        if row is None:
+            break
         print(row)
+
