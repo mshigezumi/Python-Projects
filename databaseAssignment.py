@@ -6,7 +6,7 @@ fileList = ('information.docx','Hello.txt','myImage.png',\
 
 with conn:
     cur = conn.cursor()
-    cur.execute("CREATE TABLE IF NOT EXISTS tbl_files(ID INTEGER PRIMARY KEY AUTOINCREMENT.\
+    cur.execute("CREATE TABLE IF NOT EXISTS tbl_files(ID INTEGER PRIMARY KEY AUTOINCREMENT,\
                 col_txt STRING)") #creates the table and column in the database
     conn.commit()
 
@@ -16,7 +16,6 @@ for file in fileList:
             cur = conn.cursor()
             cur.execute("INSERT INTO tbl_files (col_txt) VALUES (?)", (file,)) #inserts selected files into the column
             print(file)
-            #conn.commit()
-            #don't know if I need to commit here
+            conn.commit()
 
 conn.close()
