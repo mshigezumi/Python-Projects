@@ -2,6 +2,9 @@
 
 ## Projects:
 
+* Checkbook
+* DjangoUniversity
+* mainapp
 * Assignment
 * Budget
 * abstractionAssignment
@@ -27,6 +30,15 @@
 * tkinter
 * tkinterAssignment
 * webPageGeneratorAssignment
+
+## Checkbook
+ 
+
+## DjangoUniversity
+ 
+
+## mainapp
+ 
 
 ## Assignment
  Various basic assignments that I used to learn python.
