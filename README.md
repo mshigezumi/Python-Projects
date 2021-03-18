@@ -32,13 +32,13 @@
 * webPageGeneratorAssignment
 
 ## Checkbook
- 
+ This is a Checkbook website made using Django for a MVC website, can create an account and do transactions.
 
 ## DjangoUniversity
- 
+ A basic Django website which was used to learn the basics of the Django framework.
 
 ## mainapp
- 
+ A website made using Django complete with the ability to add, edit, or delete products which are displayed on the site.
 
 ## Assignment
  Various basic assignments that I used to learn python.
